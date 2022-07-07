@@ -1,0 +1,12 @@
+public Map<String, Integer> wordCount(String[] strings) 
+    {
+        Map<String, Integer> map = new HashMap<String, Integer>();
+        for(String x : strings)
+        {
+            if(!map.containsKey(x))
+                map.put(x, 1);
+            else
+                map.put(x, map.get(x) + 1); 
+        }
+        return map;
+    } 
